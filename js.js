@@ -18,7 +18,7 @@ class Taxi{
         let text;
         console.log(passengers)
         for (let i = 0; i < passengers.length; i++){
-            text = text + `<p>Возраст: ${passengers[i].age}, Путь ${passengers[i].distance} Итоговая сумма: ${this.calculateTripCost()}</p>`
+            text = text + `<p>Возраст: ${passengers[i].age}, Путь ${passengers[i].distance}</p>`
         }
         text = text + `Итоговая сумма: ${this.calculateTripCost()}`
         passengerInfo.innerHTML = text;
